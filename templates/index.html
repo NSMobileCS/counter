@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>counter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Allerta+Stencil" />
+        <link href={{css_path}} rel="stylesheet">
+    </head>
+    <body>
+        <h2>
+            Counter.
+        </h2>
+        <h3>
+            {{xserved}} times
+        </h3>
+        <form action='/'>
+            <input type='hidden' value="1" name='addval'>
+            <input type="submit" value='add one'>
+        </form>
+        <form action='/'>
+            <input type='hidden' value="2" name='addval'>
+            <input type="submit" value='add two'>
+        </form>
+        <form action='/reset'>
+            <input type="submit" value='reset'>
+        </form>
+    </body>
+</html>
